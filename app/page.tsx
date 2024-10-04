@@ -32,7 +32,7 @@ export default function Home() {
             <Drifting />
             <TimelineDemo />
             <ChristosTeam />
-            <CarouzelTraining />
+            {/* <CarouzelTraining /> */}
             <ParallaxScrollMain />
 
             <Footer />
