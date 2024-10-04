@@ -37,7 +37,7 @@ export const Footer = (): JSX.Element => {
                 </div>
 
                 <div className="text-center md:text-right text-sm text-gray-400 mt-6 md:mt-0">
-                    &copy; {new Date().getFullYear()} Your Company. All rights reserved.
+                    &copy; {new Date().getFullYear()} All rights reserved.
                 </div>
             </div>
         </footer>
