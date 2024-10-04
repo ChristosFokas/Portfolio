@@ -1,0 +1,9 @@
+<!-- public/images/race-track.svg -->
+<svg width="100%" height="2000" viewBox="0 0 1000 2000" xmlns="http://www.w3.org/2000/svg">
+  <path id="raceTrackPath" d="
+    M 500,0
+    C 500,400 100,400 100,800
+    S 900,1200 500,1600
+    S 100,2000 500,2000
+  " stroke="#ccc" stroke-width="10" fill="none" />
+</svg>
