@@ -3,7 +3,6 @@ import Countdown from '@/components/common/Countdown';
 import { Footer } from '@/components/common/Footer';
 import TimelineDemo from '@/components/common/TimelineDemo';
 import { CarouzelMain } from '@/components/mainPage/CarouzelMain';
-import { CarouzelTraining } from '@/components/mainPage/CarouzelTraining';
 import ChristosTeam from '@/components/mainPage/ChristosTeam';
 import Drifting from '@/components/mainPage/Drifting';
 import { ParallaxScrollMain } from '@/components/mainPage/ParallaxScrollMain';
