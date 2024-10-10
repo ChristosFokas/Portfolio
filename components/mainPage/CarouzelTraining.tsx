@@ -5,10 +5,39 @@ import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
 
 const makingFriends = {
-    text: `"One of Christos' greatest gifts is his ability to form genuine connections wherever he goes. At every race, he doesn’t just participate—he builds friendships, creating bonds that last beyond the finish line."`,
+    text: `One of Christos' greatest gifts is his ability to form genuine connections wherever he goes. At every race, he doesn’t just participate—he builds friendships, creating bonds that last beyond the finish line.`,
     img1: '/training/2.jpg',
 
 }
+
+const training = {
+    text: (
+        <div>
+            <p>Exercise is not just about achieving a healthy body. It is a powerful tool that improves every aspect of life. From boosting mental clarity to enhancing emotional well-being, regular physical activity unlocks numerous benefits. Whether it’s a morning jog, a session at the gym, or a yoga practice, exercise helps reduce stress, elevate mood, and increase productivity. It sharpens focus, builds resilience, and even helps foster stronger relationships by promoting self-confidence and energy. Exercise is truly the foundation for a balanced, fulfilling, and empowered life.</p>
+
+            <br /><br />
+
+            <p>In my personal training program, I’ve combined weight training, bodyweight training, boxing, and running. This combination has been incredibly fulfilling. Bodyweight and weight training allow me to build strength and muscle so I can drive a kart without any difficulty. Boxing improves my reflexes, concentration, and confidence level, while running enhances my stamina and helps me stay calm and relaxed with a lower heart rate under pressure. Most importantly, I enjoy every moment of my training.</p>
+            <br /><br />
+        </div>
+    ),
+    img1: '/training/trainingTwo.jpg'
+}
+
+const karting = {
+    text: (
+        <div>
+            <p>Karting is not just a sport. It’s an exhilarating pursuit that ignites a deep sense of passion and thrill. For those who crave speed, precision, and the rush of competition, karting offers the perfect adrenaline-filled outlet. The joy of racing down the track, expertly handling sharp corners, and accelerating with precision is unmatched. Every lap is a test of reflexes, control, and determination, pushing you to be faster, sharper, and more focused.</p>
+
+            <br /><br />
+
+        </div>
+    ),
+    img1: '/training/karting.jpg'
+}
+
+
+
 
 export function CarouzelTraining() {
     const cards = data.map((card, index) => (
@@ -17,15 +46,20 @@ export function CarouzelTraining() {
 
     return (
         <div className="w-full h-full py-20">
-            <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+            <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-white dark:text-neutral-200 font-sans">
                 More about Christos
             </h2>
             <Carousel items={cards} />
         </div>
     );
 }
+interface Props {
+    info: string;
+    more: React.ReactNode;
+    src1: string;
+}
 
-const DummyContent = ({ info = 'a', more = 'b', src1 = '', }) => {
+const DummyContent = ({ info = 'a', more = 'b', src1 = '', }: Props) => {
     return (
         <>
             {[...new Array(1).fill(1)].map((_, index) => {
@@ -45,7 +79,7 @@ const DummyContent = ({ info = 'a', more = 'b', src1 = '', }) => {
                             alt="Macbook mockup from Aceternity UI"
                             height="500"
                             width="500"
-                            className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+                            className=" md:w-2/2 md:h-1/2 h-full w-full mx-auto object-contain"
                         />
 
                     </div>
@@ -63,16 +97,16 @@ const data = [
         content: <DummyContent info="Making friends" more={makingFriends.text} src1={makingFriends.img1} />,
     },
     {
-        category: "Productivity",
-        title: "Enhance your productivity.",
-        src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        content: <DummyContent />,
+        category: "Training Route",
+        title: "The Exercise is the Key to Everything",
+        src: "/training/trainingOne.jpg",
+        content: <DummyContent info="Train Hard" more={training.text} src1={training.img1} />,
     },
     {
-        category: "Product",
-        title: "Launching the new Apple Vision Pro.",
-        src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        content: <DummyContent />,
+        category: "About",
+        title: "The Passion for Karting",
+        src: "/training/f1.jpg",
+        content: <DummyContent info="" more={karting.text} src1={karting.img1} />,
     },
 
 

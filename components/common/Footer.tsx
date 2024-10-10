@@ -4,10 +4,10 @@ import { faInstagram, faFacebook, faYoutube, faTiktok } from '@fortawesome/free-
 import { motion } from 'framer-motion';
 
 const socialLinks = [
-    { href: 'https://instagram.com', icon: faInstagram, label: 'Instagram' },
-    { href: 'https://facebook.com', icon: faFacebook, label: 'Facebook' },
-    { href: 'https://youtube.com', icon: faYoutube, label: 'YouTube' },
-    { href: 'https://tiktok.com', icon: faTiktok, label: 'TikTok' },
+    { href: '/coming-soon', icon: faInstagram, label: 'Instagram' },
+    { href: '/coming-soon', icon: faFacebook, label: 'Facebook' },
+    { href: 'https://www.youtube.com/@ChrisFokas', icon: faYoutube, label: 'YouTube' },
+    { href: '/coming-soon', icon: faTiktok, label: 'TikTok' },
 ];
 
 export const Footer = (): JSX.Element => {

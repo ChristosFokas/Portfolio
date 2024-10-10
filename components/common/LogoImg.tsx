@@ -5,7 +5,7 @@ export default function LogoImg() {
     return (
         <div className="flex justify-center items-center">
             <Image
-                src="/logos/last.png"
+                src="/logos/last2.png"
                 alt="Logo"
                 width={60}
                 height={60}

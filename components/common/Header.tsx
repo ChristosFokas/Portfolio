@@ -12,17 +12,18 @@ const Header = () => {
 
     return (
         <header className="fixed top-0 w-full z-50 bg-black">
-            <div className="flex items-center justify-between px-4 py-3 md:px-8">
+            <div className="flex items-center justify-between px-5 py-3 md:px-8">
                 {/* Logo */}
                 <div className="flex items-center">
                     <a href="#home">
                         <Image
-                            src="/logos/image.png"
+                            src="/logos/last2.png"
                             alt="Logo"
-                            width={100}
-                            height={40}
-                            className="h-10 w-auto"
+                            width={500}  // Increased width
+                            height={50}  // Increased height
+                            className="h-24 w-24"  // Adjusted height
                         />
+
                     </a>
                 </div>
 

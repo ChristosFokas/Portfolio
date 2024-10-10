@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/common/Header";
+import ManaComponent from "@/components/common/ManaComponent";
 
 const geistSans = localFont({
   src: "./fonts/PlaypenSans.woff",
@@ -29,7 +30,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ManaComponent message="We use cookies for security and analytical purposes, by browsing this webpage you agree to the cookies policy" />
         <Header />
+
         {children}
       </body>
     </html>
