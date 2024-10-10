@@ -10,7 +10,7 @@ export default function F1StyleText({ txtTop, txtBot }: Props) {
         <div className="flex flex-col bg-transparent items-center justify-center   text-white">
             {/* Main F1 Style Header */}
             <motion.h1
-                className="text-5xl font-bold uppercase tracking-tight italic text-foreground"
+                className="text-3xl md:text-5xl font-bold uppercase tracking-tight italic text-foreground"
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ type: "tween", duration: 1 }}

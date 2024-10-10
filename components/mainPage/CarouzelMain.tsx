@@ -25,14 +25,13 @@ export function CarouzelMain() {
                         <CarouselItem key={index} className="w-full h-full">
                             <div className="h-full">
                                 <Card className="h-full w-full">
-                                    <CardContent className="flex items-center justify-center w-full h-full relative">
+                                    <CardContent className=" flex items-center justify-center  h-full relative md:w-full">
                                         <Image
                                             src={room}
                                             alt={`Image ${index + 1}`}
                                             layout="fill"
                                             objectFit="cover"
                                             quality={100}
-                                            className="scale-100 md:scale-100 sm:scale-90" // Scale down on mobile
                                         />
                                     </CardContent>
                                 </Card>

@@ -31,7 +31,16 @@ const ProfileSection = () => {
                         alt="Profile"
                         width={400}
                         height={600}
-                        className="opacity-100"
+                        className=" opacity-100 w-2/3 h-1/2 md:hidden"
+                        objectFit="contain"
+                        priority={true}
+                    />
+                    <Image
+                        src="/ProfileSectionImages/14.png"
+                        alt="Profile"
+                        width={360}
+                        height={400}
+                        className="opacity-100  hidden md:block"
                         objectFit="contain"
                         priority={true}
                     />
