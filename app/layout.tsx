@@ -16,6 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+
   title: "Christos Fokas - Rising F1 and Kart Driver",
   description: "Discover Christos Fokas, an up-and-coming kart driver with dreams of competing in Formula 1. Follow his journey through the world of motorsports.",
   keywords: "Christos Fokas, F1 driver, kart driver, motorsports, Formula 1, racing, karting competitions, ChristosFokas, F1 rising star, young kart driver, karting, kart racing",
@@ -43,6 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
