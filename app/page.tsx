@@ -1,19 +1,19 @@
-'use client'
-import Countdown from '@/components/common/Countdown';
-import { Footer } from '@/components/common/Footer';
-import TimelineDemo from '@/components/common/TimelineDemo';
-import { CarouzelMain } from '@/components/mainPage/CarouzelMain';
-import ChristosTeam from '@/components/mainPage/ChristosTeam';
-import Drifting from '@/components/mainPage/Drifting';
-import { ParallaxScrollMain } from '@/components/mainPage/ParallaxScrollMain';
-import { CarouzelTraining } from '@/components/mainPage/CarouzelTraining';
-import ProfileSection from '@/components/mainPage/ProfileSection';
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-import YouTubeEmbed from '@/components/common/YoutubeEmbed';
+"use client";
+import Countdown from "@/components/common/Countdown";
+import { Footer } from "@/components/common/Footer";
+import TimelineDemo from "@/components/common/TimelineDemo";
+import { CarouzelMain } from "@/components/mainPage/CarouzelMain";
+import ChristosTeam from "@/components/mainPage/ChristosTeam";
+import Drifting from "@/components/mainPage/Drifting";
+import { ParallaxScrollMain } from "@/components/mainPage/ParallaxScrollMain";
+import { CarouzelTraining } from "@/components/mainPage/CarouzelTraining";
+import ProfileSection from "@/components/mainPage/ProfileSection";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import YouTubeEmbed from "@/components/common/YoutubeEmbed";
 
 export default function Home() {
-  const [showCountdown, setShowCountdown] = useState(false);
+  const [showCountdown, setShowCountdown] = useState(true);
   const handleCountdownComplete = () => {
     setShowCountdown(false);
   };
@@ -36,11 +36,13 @@ export default function Home() {
             <CarouzelTraining />
             <ParallaxScrollMain />
 
-            <YouTubeEmbed title='Christos Drifting' videoId='oNvqwFgO3Os' description='Drama 2023' />
+            <YouTubeEmbed
+              title="Christos Drifting"
+              videoId="oNvqwFgO3Os"
+              description="Drama 2023"
+            />
             <ChristosTeam />
             <Footer />
-
-
           </div>
         </motion.div>
       )}
