@@ -35,7 +35,7 @@ export const Footer = (): JSX.Element => {
               href="mailto:christosfokas@gmail.com"
               className="text-white underline"
             >
-              christosfokas@gmail.com
+              christosfokas28@gmail.com
             </a>
           </p>
         </div>
