@@ -11,6 +11,7 @@ import ProfileSection from "@/components/mainPage/ProfileSection";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import YouTubeEmbed from "@/components/common/YoutubeEmbed";
+import UpcomingRaceComponent from "@/components/mainPage/UpcomingRaceComponent";
 
 export default function Home() {
   const [showCountdown, setShowCountdown] = useState(true);
@@ -31,6 +32,7 @@ export default function Home() {
             <CarouzelMain />
             <ProfileSection />
             <Drifting />
+            <UpcomingRaceComponent />
             <TimelineDemo />
 
             <CarouzelTraining />
